@@ -51,7 +51,6 @@ public class EarthquakeActivity extends Activity {
         earthquakes.add("Paris");
 
 
-
         // Find a reference to the {@link ListView} in the layout
         ListView earthquakeListView = (ListView) findViewById(R.id.list);
         AndroidEarthquakeAdapter androidEarthquakeAdapter = new AndroidEarthquakeAdapter(this, R.layout.list_item, list_of_earthquakes);
