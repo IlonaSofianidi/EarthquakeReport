@@ -1,9 +1,16 @@
 package com.example.android.quakereport;
 
 class EarthquakeEntity {
- private double magnitude;
- private String earthquake_location;
- private String date;
+    private double magnitude;
+    private String earthquake_location;
+    private long date;
+
+
+    public EarthquakeEntity(double magnitude, String earthquake_location, long date) {
+        this.magnitude = magnitude;
+        this.earthquake_location = earthquake_location;
+        this.date = date;
+    }
 
     @Override
     public String toString() {
@@ -12,12 +19,6 @@ class EarthquakeEntity {
                 ", earthquake_location='" + earthquake_location + '\'' +
                 ", date='" + date + '\'' +
                 '}';
-    }
-
-    public EarthquakeEntity(double magnitude, String earthquake_location, String date) {
-        this.magnitude = magnitude;
-        this.earthquake_location = earthquake_location;
-        this.date = date;
     }
 
     public double getMagnitude() {
@@ -36,11 +37,11 @@ class EarthquakeEntity {
         this.earthquake_location = earthquake_location;
     }
 
-    public String getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(long date) {
         this.date = date;
     }
 }
