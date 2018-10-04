@@ -2,18 +2,13 @@ package com.example.android.quakereport;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.ColorFilter;
-import android.graphics.LightingColorFilter;
+
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.LayerDrawable;
-import android.graphics.drawable.StateListDrawable;
+
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,8 +46,6 @@ public class AndroidEarthquakeAdapter extends ArrayAdapter<EarthquakeEntity> {
         View listItemView = convertView;
         EarthquakeEntityHolder holder = null;
 
-        // Set the proper background color on the magnitude circle.
-        // Fetch the background from the TextView, which is a GradientDrawable.
 
 
         if (listItemView == null) {
