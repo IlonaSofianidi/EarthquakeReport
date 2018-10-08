@@ -125,7 +125,7 @@ public final class QueryUtils {
     }
 
     /**
-     * Read inputstram and convert it to string
+     * Read inputstream and convert it to string
      *
      * @param inputStream
      * @return String
@@ -151,6 +151,7 @@ public final class QueryUtils {
      * parsing a JSON response.
      */
     private static ArrayList<EarthquakeEntity> extractEarthquakes(String jsonResponse) {
+
 
         // Create an empty ArrayList that we can start adding earthquakes to
         ArrayList<EarthquakeEntity> earthquakes = new ArrayList<>();

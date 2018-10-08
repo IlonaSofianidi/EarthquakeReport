@@ -12,6 +12,8 @@ class EarthquakeEntity {
         this.date = date;
     }
 
+    private String url;
+
     @Override
     public String toString() {
         return "EarthquakeEntity{" +
@@ -19,6 +21,21 @@ class EarthquakeEntity {
                 ", earthquake_location='" + earthquake_location + '\'' +
                 ", date='" + date + '\'' +
                 '}';
+    }
+
+    public EarthquakeEntity(double magnitude, String earthquake_location, long date, String url) {
+        this.magnitude = magnitude;
+        this.earthquake_location = earthquake_location;
+        this.date = date;
+        this.url = url;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public double getMagnitude() {
